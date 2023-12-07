@@ -1,55 +1,59 @@
-import { MainData } from '../contants/MainData'
-import { Home } from './Home'
-@Component
-struct NetEaseTab {
-  private controller: TabsController = new TabsController()
-  private tabs = MainData.getTabs()
-  build() {
-    Tabs({ barPosition: BarPosition.End, controller: this.controller }) {
-      TabContent() {
-        Home()
-      }
-      .tabBar(this.tabs[0].label)
-
-      TabContent() {
-        Column().width('100%').height('100%').backgroundColor(Color.Blue)
-      }
-      .tabBar(this.tabs[1].label)
-
-      TabContent() {
-        Column().width('100%').height('100%').backgroundColor(Color.Yellow)
-      }
-      .tabBar(this.tabs[2].label)
-
-      TabContent() {
-        Column().width('100%').height('100%').backgroundColor(Color.Pink)
-      }
-      .tabBar(this.tabs[3].label)
-      TabContent() {
-        Column().width('100%').height('100%').backgroundColor(Color.White)
-      }
-      .tabBar(this.tabs[4].label)
-    }
-    .vertical(false)
-    .barWidth('100%') // 设置TabBar宽度
-    .barHeight(60) // 设置TabBar高度
-    .width('100%') // 设置Tabs组件宽度
-    .height('100%') // 设置Tabs组件高度
-    .backgroundColor(0xF5F5F5) // 设置Tabs组件背景颜色
-  }
-}
+import { HomeConstants } from '../contants/HomeConstants';
+import { StyleConstants } from '../contants/StyleConstants';
+import IndexItem from '../viewModel/IndexItem';
+import IndexViewModel from '../viewModel/IndexViewModel';
+import { IndexConstants } from './index.data';
 
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World'
-  @Provide theme: 'dark' | 'light' = 'dark';
+  @State indexItemList: IndexItem[] = IndexViewModel.getIndexItemList();
 
   build() {
-    Column() {
-      NetEaseTab()
+    GridRow(IndexConstants.gridRow) {
+      GridCol(IndexConstants.gridCol) {
+        Column({ space: HomeConstants.COLUMN_SPACE }) {
+          ForEach(this.indexItemList, (item: IndexItem) => {
+            Stack() {
+              Image(item.icon)
+                .width(StyleConstants.FULL_WIDTH)
+                .height($r('app.float.item_height'))
+                .borderRadius($r('app.float.item_border_radius'))
+              Column() {
+                Text(item.title)
+                  .fontSize($r('app.float.title_font_size'))
+                  .fontColor(Color.White)
+                Text(item.description)
+                  .opacity(HomeConstants.TEXT_OPACITY)
+                  .fontColor(Color.White)
+                  .fontSize($r('app.float.description_font_size'))
+                  .margin({ top: $r('app.float.description_margin_top') })
+                Blank()
+                Column() {
+                  Button() {
+                    Text(item.button).fontColor(Color.White)
+                  }
+                  .width($r('app.float.button_width'))
+                  .height($r('app.float.button_height'))
+                  .borderRadius($r('app.float.button_border_radius'))
+                  .backgroundColor($r('app.color.button_background_color'))
+                }
+                .alignItems(HorizontalAlign.End)
+                .width(StyleConstants.FULL_WIDTH)
+              }
+              .width(StyleConstants.FULL_WIDTH)
+              .height($r('app.float.item_height'))
+              .borderRadius($r('app.float.item_border_radius'))
+              .padding($r('app.float.item_padding'))
+            }
+          }, (item: IndexItem, index: number) => index + JSON.stringify(item))
+        }
+      }
     }
-    .height('100%')
-    .width('100%')
+    .padding({
+      top: $r('app.float.column_padding_top'),
+      left: $r('app.float.column_padding_left'),
+      right: $r('app.float.column_padding_right'),
+    })
   }
 }
