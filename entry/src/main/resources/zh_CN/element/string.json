@@ -35,6 +35,10 @@
     {
       "name": "button_live",
       "value": "观看直播"
+    },
+    {
+      "name": "play_list",
+      "value": "歌单"
     }
   ]
 }

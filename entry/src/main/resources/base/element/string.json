@@ -35,6 +35,10 @@
     {
       "name": "button_live",
       "value": "Watch Live"
+    },
+    {
+      "name": "play_list",
+      "value":"play list"
     }
   ]
 }

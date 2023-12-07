@@ -1,3 +1,5 @@
+import router from '@ohos.router';
+
 import { HomeConstants } from '../contants/HomeConstants';
 import { StyleConstants } from '../contants/StyleConstants';
 import IndexItem from '../viewModel/IndexItem';
@@ -37,6 +39,9 @@ struct Index {
                   .height($r('app.float.button_height'))
                   .borderRadius($r('app.float.button_border_radius'))
                   .backgroundColor($r('app.color.button_background_color'))
+                  .onClick(() => {
+                    router.pushUrl({ url: item.url }, router.RouterMode.Single);
+                  })
                 }
                 .alignItems(HorizontalAlign.End)
                 .width(StyleConstants.FULL_WIDTH)

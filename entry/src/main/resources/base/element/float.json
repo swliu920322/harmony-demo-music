@@ -48,6 +48,9 @@
       "name": "button_height",
       "value": "40vp"
     },
-
+    {
+      "name": "title_opacity",
+      "value": "0.9"
+    }
   ]
 }
