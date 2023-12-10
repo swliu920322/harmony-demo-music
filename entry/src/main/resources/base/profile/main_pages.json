@@ -3,5 +3,5 @@
     "pages/Index",
     "pages/Live",
     "pages/MusicList/MusicList"
-  ]
+  ,"pages/MusicList/MusicComment"]
 }

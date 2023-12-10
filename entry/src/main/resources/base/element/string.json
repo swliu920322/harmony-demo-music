@@ -39,6 +39,22 @@
     {
       "name": "play_list",
       "value":"play list"
+    },
+    {
+      "name": "collect",
+      "value": "collect"
+    },
+    {
+      "name": "download",
+      "value": "download"
+    },
+    {
+      "name": "comment",
+      "value": "comment"
+    },
+    {
+      "name": "share",
+      "value": "share"
     }
   ]
 }
