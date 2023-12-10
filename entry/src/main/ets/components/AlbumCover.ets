@@ -72,6 +72,10 @@ struct AlbumComponent {
         }
       }, (item: OptionItem, index: Number) => index + JSON.stringify(item))
     }
+    .height(70)
+    .padding({ left: 10, right: 10 })
+    .width('100%')
+    .justifyContent(FlexAlign.SpaceBetween)
   }
 
   static imgRowCol = {
