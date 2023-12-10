@@ -23,7 +23,7 @@ struct MusicList {
     Stack({ alignContent: Alignment.Top }) {
       Header({ currentBreakpoint: $currentBreakpoint })
       Content({ currentBreakpoint: $currentBreakpoint })
-      Player()
+      Player({ currentBreakpoint: $currentBreakpoint })
     }
     .width(StyleConstants.FULL_WIDTH)
     .backgroundColor(
