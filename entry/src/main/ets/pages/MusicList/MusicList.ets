@@ -1,4 +1,4 @@
-import { BreakpointSystem } from '../../utils/BreakpointSystem'
+import { BreakpointSystem, BreakpointType } from '../../utils/BreakpointSystem'
 import { BreakpointConstants } from '../../contants/BreakpointConstants'
 import { StyleConstants } from '../../contants/StyleConstants'
 import { Content } from './components/Content'
@@ -20,11 +20,10 @@ struct MusicList {
   // }
 
   build() {
-    Stack() {
+    Stack({ alignContent: Alignment.Top }) {
       Header({ currentBreakpoint: $currentBreakpoint })
       Content({ currentBreakpoint: $currentBreakpoint })
       Player()
-      Text(this.currentBreakpoint)
     }
     .width(StyleConstants.FULL_WIDTH)
     .backgroundColor(

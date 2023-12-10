@@ -29,5 +29,6 @@ export struct Header {
     .padding({ left: 16, right: 16 })
     .width(StyleConstants.FULL_WIDTH)
     .height(50)
+    .zIndex(2)
   }
 }
