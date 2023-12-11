@@ -26,8 +26,10 @@ export struct Content {
       })
 
       GridCol({ span: Content.col }) {
-        PlayList()
+        PlayList({ currentBreakpoint: $currentBreakpoint })
       }
+      .borderRadius(20)
+      .backgroundColor(Color.White)
     }
     .height(StyleConstants.FULL_HEIGHT)
     .onBreakpointChange((breakpoints: string) => {

@@ -1,6 +1,6 @@
 import { SongItem } from './SongData';
 
-const MusicList: SongItem[] = [
+export const MusicList: SongItem[] = [
   {
     id: 1,
     title: '不知道',
@@ -136,177 +136,175 @@ const MusicList: SongItem[] = [
     src: 'dynamic.wav',
     index: 14
   },
-  {
-    id: 16,
-    title: '谢谢你',
-    singer: '名佚',
-    mark: $r('app.media.ic_sq'),
-    label: $r('app.media.ic_avatar16'),
-    src: 'boisterous.wav',
-    index: 15
-  },
-  {
-    id: 17,
-    title: '我是靓仔',
-    singer: '我是小树',
-    mark: $r('app.media.ic_vip'),
-    label: $r('app.media.ic_avatar17'),
-    src: 'dynamic.wav',
-    index: 16
-  },
-  {
-    id: 18,
-    title: '听我说',
-    singer: '全村最帅',
-    mark: $r('app.media.ic_sq'),
-    label: $r('app.media.ic_avatar1'),
-    src: 'boisterous.wav',
-    index: 17
-  },
-  {
-    id: 19,
-    title: '没什么大不了',
-    singer: '小安安',
-    mark: $r('app.media.ic_vip'),
-    label: $r('app.media.ic_avatar2'),
-    src: 'dynamic.wav',
-    index: 18
-  },
-  {
-    id: 20,
-    title: '其实也一样',
-    singer: '我是小树',
-    mark: $r('app.media.ic_sq'),
-    label: $r('app.media.ic_avatar13'),
-    src: 'boisterous.wav',
-    index: 19
-  },
-  {
-    id: 21,
-    title: '想明白',
-    singer: '小安安',
-    mark: $r('app.media.ic_vip'),
-    label: $r('app.media.ic_avatar4'),
-    src: 'dynamic.wav',
-    index: 20
-  },
-  {
-    id: 22,
-    title: '你懂的',
-    singer: '小安安',
-    mark: $r('app.media.ic_sq'),
-    label: $r('app.media.ic_avatar5'),
-    src: 'boisterous.wav',
-    index: 21
-  },
-  {
-    id: 23,
-    title: '谁了解',
-    singer: '小安安',
-    mark: $r('app.media.ic_vip'),
-    label: $r('app.media.ic_avatar6'),
-    src: 'dynamic.wav',
-    index: 22
-  },
-  {
-    id: 24,
-    title: '白天',
-    singer: '小安安',
-    mark: $r('app.media.ic_sq'),
-    label: $r('app.media.ic_avatar17'),
-    src: 'dynamic.wav',
-    index: 23
-  },
-  {
-    id: 25,
-    title: '黑夜',
-    singer: 'Gwyu-Hjjiyabn',
-    mark: $r('app.media.ic_vip'),
-    label: $r('app.media.ic_avatar15'),
-    src: 'boisterous.wav',
-    index: 24
-  },
-  {
-    id: 26,
-    title: '春夏秋冬',
-    singer: '名佚',
-    mark: $r('app.media.ic_sq'),
-    label: $r('app.media.ic_avatar16'),
-    src: 'boisterous.wav',
-    index: 25
-  },
-  {
-    id: 27,
-    title: '一年四季',
-    singer: '我是小树',
-    mark: $r('app.media.ic_vip'),
-    label: $r('app.media.ic_avatar17'),
-    src: 'dynamic.wav',
-    index: 26
-  },
-  {
-    id: 28,
-    title: '朝雪',
-    singer: '全村最帅',
-    mark: $r('app.media.ic_sq'),
-    label: $r('app.media.ic_avatar12'),
-    src: 'dynamic.wav',
-    index: 27
-  },
-  {
-    id: 29,
-    title: '暮色',
-    singer: '小安安',
-    mark: $r('app.media.ic_vip'),
-    label: $r('app.media.ic_avatar13'),
-    src: 'boisterous.wav',
-    index: 28
-  },
-  {
-    id: 30,
-    title: '天下',
-    singer: '我是小树',
-    mark: $r('app.media.ic_sq'),
-    label: $r('app.media.ic_avatar14'),
-    src: 'dynamic.wav',
-    index: 29
-  },
-  {
-    id: 31,
-    title: '勇敢',
-    singer: '小安安',
-    mark: $r('app.media.ic_vip'),
-    label: $r('app.media.ic_avatar15'),
-    src: 'boisterous.wav',
-    index: 30
-  },
-  {
-    id: 32,
-    title: '安明',
-    singer: '小安安',
-    mark: $r('app.media.ic_sq'),
-    label: $r('app.media.ic_avatar16'),
-    src: 'boisterous.wav',
-    index: 31
-  },
-  {
-    id: 33,
-    title: '心安',
-    singer: '小安安',
-    mark: $r('app.media.ic_vip'),
-    label: $r('app.media.ic_avatar17'),
-    src: 'dynamic.wav',
-    index: 32
-  },
-  {
-    id: 34,
-    title: '无归',
-    singer: '小安安',
-    mark: $r('app.media.ic_sq'),
-    label: $r('app.media.ic_avatar11'),
-    src: 'boisterous.wav',
-    index: 33
-  }
+  // {
+  //   id: 16,
+  //   title: '谢谢你',
+  //   singer: '名佚',
+  //   mark: $r('app.media.ic_sq'),
+  //   label: $r('app.media.ic_avatar16'),
+  //   src: 'boisterous.wav',
+  //   index: 15
+  // },
+  // {
+  //   id: 17,
+  //   title: '我是靓仔',
+  //   singer: '我是小树',
+  //   mark: $r('app.media.ic_vip'),
+  //   label: $r('app.media.ic_avatar17'),
+  //   src: 'dynamic.wav',
+  //   index: 16
+  // },
+  // {
+  //   id: 18,
+  //   title: '听我说',
+  //   singer: '全村最帅',
+  //   mark: $r('app.media.ic_sq'),
+  //   label: $r('app.media.ic_avatar1'),
+  //   src: 'boisterous.wav',
+  //   index: 17
+  // },
+  // {
+  //   id: 19,
+  //   title: '没什么大不了',
+  //   singer: '小安安',
+  //   mark: $r('app.media.ic_vip'),
+  //   label: $r('app.media.ic_avatar2'),
+  //   src: 'dynamic.wav',
+  //   index: 18
+  // },
+  // {
+  //   id: 20,
+  //   title: '其实也一样',
+  //   singer: '我是小树',
+  //   mark: $r('app.media.ic_sq'),
+  //   label: $r('app.media.ic_avatar13'),
+  //   src: 'boisterous.wav',
+  //   index: 19
+  // },
+  // {
+  //   id: 21,
+  //   title: '想明白',
+  //   singer: '小安安',
+  //   mark: $r('app.media.ic_vip'),
+  //   label: $r('app.media.ic_avatar4'),
+  //   src: 'dynamic.wav',
+  //   index: 20
+  // },
+  // {
+  //   id: 22,
+  //   title: '你懂的',
+  //   singer: '小安安',
+  //   mark: $r('app.media.ic_sq'),
+  //   label: $r('app.media.ic_avatar5'),
+  //   src: 'boisterous.wav',
+  //   index: 21
+  // },
+  // {
+  //   id: 23,
+  //   title: '谁了解',
+  //   singer: '小安安',
+  //   mark: $r('app.media.ic_vip'),
+  //   label: $r('app.media.ic_avatar6'),
+  //   src: 'dynamic.wav',
+  //   index: 22
+  // },
+  // {
+  //   id: 24,
+  //   title: '白天',
+  //   singer: '小安安',
+  //   mark: $r('app.media.ic_sq'),
+  //   label: $r('app.media.ic_avatar17'),
+  //   src: 'dynamic.wav',
+  //   index: 23
+  // },
+  // {
+  //   id: 25,
+  //   title: '黑夜',
+  //   singer: 'Gwyu-Hjjiyabn',
+  //   mark: $r('app.media.ic_vip'),
+  //   label: $r('app.media.ic_avatar15'),
+  //   src: 'boisterous.wav',
+  //   index: 24
+  // },
+  // {
+  //   id: 26,
+  //   title: '春夏秋冬',
+  //   singer: '名佚',
+  //   mark: $r('app.media.ic_sq'),
+  //   label: $r('app.media.ic_avatar16'),
+  //   src: 'boisterous.wav',
+  //   index: 25
+  // },
+  // {
+  //   id: 27,
+  //   title: '一年四季',
+  //   singer: '我是小树',
+  //   mark: $r('app.media.ic_vip'),
+  //   label: $r('app.media.ic_avatar17'),
+  //   src: 'dynamic.wav',
+  //   index: 26
+  // },
+  // {
+  //   id: 28,
+  //   title: '朝雪',
+  //   singer: '全村最帅',
+  //   mark: $r('app.media.ic_sq'),
+  //   label: $r('app.media.ic_avatar12'),
+  //   src: 'dynamic.wav',
+  //   index: 27
+  // },
+  // {
+  //   id: 29,
+  //   title: '暮色',
+  //   singer: '小安安',
+  //   mark: $r('app.media.ic_vip'),
+  //   label: $r('app.media.ic_avatar13'),
+  //   src: 'boisterous.wav',
+  //   index: 28
+  // },
+  // {
+  //   id: 30,
+  //   title: '天下',
+  //   singer: '我是小树',
+  //   mark: $r('app.media.ic_sq'),
+  //   label: $r('app.media.ic_avatar14'),
+  //   src: 'dynamic.wav',
+  //   index: 29
+  // },
+  // {
+  //   id: 31,
+  //   title: '勇敢',
+  //   singer: '小安安',
+  //   mark: $r('app.media.ic_vip'),
+  //   label: $r('app.media.ic_avatar15'),
+  //   src: 'boisterous.wav',
+  //   index: 30
+  // },
+  // {
+  //   id: 32,
+  //   title: '安明',
+  //   singer: '小安安',
+  //   mark: $r('app.media.ic_sq'),
+  //   label: $r('app.media.ic_avatar16'),
+  //   src: 'boisterous.wav',
+  //   index: 31
+  // },
+  // {
+  //   id: 33,
+  //   title: '心安',
+  //   singer: '小安安',
+  //   mark: $r('app.media.ic_vip'),
+  //   label: $r('app.media.ic_avatar17'),
+  //   src: 'dynamic.wav',
+  //   index: 32
+  // },
+  // {
+  //   id: 34,
+  //   title: '无归',
+  //   singer: '小安安',
+  //   mark: $r('app.media.ic_sq'),
+  //   label: $r('app.media.ic_avatar11'),
+  //   src: 'boisterous.wav',
+  //   index: 33
+  // }
 ]
-
-export { MusicList }
