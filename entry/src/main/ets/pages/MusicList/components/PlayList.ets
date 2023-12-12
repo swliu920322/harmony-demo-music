@@ -11,7 +11,26 @@ export struct PlayList {
 
   @Builder
   PlayAll() {
-    Text('11')
+    Row() {
+      Row() {
+        Image($r('app.media.ic_play_all'))
+          .width(23)
+          .height(23)
+        Text('播放全部' + this.songList.length)
+          .margin({left: 16})
+      }
+      Blank()
+      Row() {
+        Image($r('app.media.ic_order_play'))
+          .width(23)
+          .height(23)
+        Image($r('app.media.ic_sort_list'))
+          .width(23)
+          .height(23)
+          .margin({left: 16})
+      }
+    }
+    .justifyContent(FlexAlign.SpaceBetween)
   }
 
   @Builder
