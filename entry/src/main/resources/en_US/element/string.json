@@ -11,6 +11,31 @@
     {
       "name": "EntryAbility_label",
       "value": "label"
+    },
+
+    {
+      "name": "music_title",
+      "value": "Folk Soul"
+    },
+    {
+      "name": "live_title",
+      "value": "Dandelion Live"
+    },
+    {
+      "name": "button_music",
+      "value": "Playing music"
+    },
+    {
+      "name": "button_live",
+      "value": "Watch Live"
+    },
+    {
+      "name": "music_description",
+      "value": "The song list selects some of the more concerned folk songs, a folk song soothes life."
+    },
+    {
+      "name": "live_description",
+      "value": "I've selected some of the live features that everyone likes."
     }
   ]
 }
