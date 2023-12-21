@@ -27,7 +27,7 @@ struct MusicList {
           }
 
           GridCol({ span: { ...this.commonColConfig, lg: GridConstants.SPAN_EIGHT } } as GridColOptions) {
-            PlayList()
+            PlayList({ currentBreakpoint: this.currentBreakpoint })
           }
         }
         .width('100%')
@@ -36,6 +36,7 @@ struct MusicList {
         })
       }
       .flexGrow(1)
+      .flexShrink(1)
 
       Player()
     }

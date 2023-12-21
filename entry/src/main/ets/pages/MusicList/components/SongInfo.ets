@@ -67,8 +67,6 @@ export struct SongInfo {
       top: new BreakpointType({ sm: 10, md: 30, lg: 40 }).getValue(this.currentBreakpoint),
       left: new BreakpointType({ sm: 10, md: 30, lg: 40 }).getValue(this.currentBreakpoint),
     })
-    // .backgroundColor(Color.Gray)
-    // .width('100%')
   }
 }
 
